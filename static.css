@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* The upper part is about to fill white gaps around navbar and the box sizing is used to make navbar fit to screen here. */
+body{
+    font-family: Poppins;
+}
+/* padding is            */
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+    box-shadow: 2px 2px 4px black;
+    z-index: 999;
+}
+nav img{
+    width: 150px;
+    cursor: pointer;
+}
+#menu{
+ display: none;
+}
+#menu-close{
+    display: none;
+}
+nav .navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0%;
+    padding:0%;
+}
+nav .navigation ul li{
+    list-style: none;
+    margin-left: 30px;
+}
+nav .navigation ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+nav .navigation ul li a:hover{
+ color: blue;
+}
+/* background-image: linear-gradient(direction, color-stop1, color-stop2, ...);  default top to down */
+/*rgba(red, green, blue, alpha) alpha denote opacity like 0.3 etc */
+#Home{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,255,0.5)),url("Images/c.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+    justify-content: center;
+    flex-direction: column;
+}
+#Home h2{
+    color: white;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+#Home p{
+    color: white;
+    font-size: 1.0rem;
+    letter-spacing: 0.5px;
+    font-style: oblique;
+}
+#Home .btn{
+    margin-top: 30px;
+}
+#Home a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    background-color: aliceblue;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 13px 35px;
+
+}
+#Home a.Blue{
+    color: aliceblue;
+    background-color: #8675eb;
+}
+#Home a.Blue:hover{
+    color: #8675eb;
+    background-color: aliceblue;
+}
+#Home a.Yellow{
+    color: #8675eb;
+    background-color: aliceblue;
+}
+#Home a.Yellow:hover{
+    color: black;
+    background-color: hsl(61, 100%, 72%);
+}
+#Features{
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+    margin-top: -30px;
+}
+#Features .feature-base{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+#Features .feature-box{
+    background-color: #f9f9f9;
+    text-align: start;
+    display: inline;
+}
+#Features .feature-box i{
+    font-size: 2.3rem;
+    color: darkblue;
+}
+#Features .feature-box h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+    padding: 13px 0 7px 0;
+}
+#Features .feature-box p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+}
+/* Courses */
+#Course{
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+    margin-top: -30px;
+}
+#Course .Course-Box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+#Course .Courses{
+    text-align: start;
+    background-color: #f9f9f9;
+    height: 100%;
+    position: relative;
+}
+#Course .Courses img{
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+}
+#Course .Courses .detials{
+    padding: 15px 15px 0 15px;
+}
+#Course .Courses span{
+    font-size: 12px;
+}
+#Course .Courses .detials i{
+    color: #FDC93B;
+    font-size: .9rem;
+}
+#Course .Courses .cost{
+    background-color: #8675eb;
+    color: #fff;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    bottom: 100px;
+    font-size: 20px ;
+}
+#registration{
+    margin-top: 75px;
+    padding: 6vw 8vw 6vw 8vw;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,255,0.5)),url("Images/c11.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#registration .remainder{
+    color: #fff;
+}
+#registration .remainder h1{
+    color: #fff;
+}
+#registration .form{
+     background-color: #fff;
+     border-radius: 8px;
+     display: flex;
+     flex-direction: column;
+     padding: 40px;
+     box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+}
+#registration .form input{
+    margin: 15px;
+    padding: 15px 10px;
+    border: 0.5px solid black;
+    outline: none;
+    
+}
+#registration .form input::placeholder{
+    color: black;
+    font-weight: 500;
+    font-size: 0.9rem;
+    
+}
+#registration .form .btn{
+margin-top: 20px;
+align: center;
+margin-left: 40px;
+}
+#registration a.Yellow{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    font-weight: 600;
+    border-radius: 5px;
+    color: white;
+    background-color: #8675eb;
+    transition: 0.3s ease;
+    align-content: center;
+}
+#registration a.Yellow:hover{
+    color: white;
+    background-color: blue;
+}
+#experts{
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+    margin-top: -20px;
+}
+#experts .expert-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+#experts .profile{
+    background-color: #fafaf1;
+    padding: 30px 10px;
+    margin-top: -20px;
+}
+#experts h1{
+    margin-top: -30px;
+}
+#experts .profile img{
+    border-radius: 50%;
+    height: 1fr;
+    width: 50%;
+    border: 2px solid white;
+}
+.pro-links{
+    margin-top: 10px;
+}
+.pro-links i{
+    padding: 10px 13px;
+    border: 1px solid black;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.pro-links i:hover{
+    background-color: darkblue;
+    color: #fafaf1;
+    cursor: pointer;
+}
+footer{
+  padding: 8vw;
+  background-color: rgb(1, 1, 92);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+footer h3{
+    color: #fafaf1;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+footer li{
+    list-style: none;
+    color: #7b838a;
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 300;
+}
+footer li:hover{
+    color: white;
+    cursor: pointer;
+}
+footer input{
+    width: 220px;
+    padding: 15px 12px;
+    background: #334f6C;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+footer p{
+    color: #7b838a;
+    font-weight: 400;
+}
+footer .sub{
+    margin-top: 20px;
+    font-weight: bold;
+}
+footer a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 13px 35px;
+    font-weight: bolder;
+    color: #f9f9f9;
+
+}
+footer .sub a.Yellow{
+    color: #fafaf1;
+    background: #FDC93B;
+    transition: 0.3s ease;
+    text-decoration: none;
+    padding: 11px;
+}
+footer .sub a.Yellow:hover{
+    color:  rgb(1, 1, 92);
+    background: #fafaf1;
+    
+}
+footer .copyright p{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    color: #fafaf1;
+}
+footer .copyright {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+footer .copyright .pro-links{
+    position: relative;
+    margin-left: 970px;
+    margin-top:  -25px;
+}
+footer .copyright .pro-links i{
+    padding: 10px 13px;
+    color: #fafaf1;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+}
+footer .copyright .pro-links i:hover{
+    background: white;
+    color: rgb(21,21,100);
+    border: 1px solid rgb(21,21,100);
+    cursor: pointer;
+}
+@media (max-width: 460px) {
+    html, body, .navigation, div{
+        justify-content: fit-content;
+        padding: ;
+        margin: auto;
+        height: auto;
+        width: 100%;
+    }
+    nav{
+        position: absolute;
+        justify-content: fit-content;
+        width: auto;
+        height: auto;
+    }
+}
