@@ -20,6 +20,7 @@ nav{
     padding: 1vw 8vw;
     box-shadow: 2px 2px 4px black;
     z-index: 999;
+    overflow: hidden;
 }
 nav img{
     width: 150px;
@@ -49,6 +50,7 @@ nav .navigation ul li a{
     font-weight: 500;
     transition: 0.3s ease;
 }
+nav .navigation ul li a.active,
 nav .navigation ul li a:hover{
  color: blue;
 }
@@ -363,8 +365,6 @@ footer .copyright {
 }
 footer .copyright .pro-links{
     position: relative;
-    margin-left: 970px;
-    margin-top:  -25px;
 }
 footer .copyright .pro-links i{
     padding: 10px 13px;
@@ -380,18 +380,26 @@ footer .copyright .pro-links i:hover{
     border: 1px solid rgb(21,21,100);
     cursor: pointer;
 }
-@media (max-width: 460px) {
-    html, body, .navigation, div{
-        justify-content: fit-content;
-        padding: ;
-        margin: auto;
-        height: auto;
-        width: 100%;
-    }
-    nav{
-        position: absolute;
-        justify-content: fit-content;
-        width: auto;
-        height: auto;
-    }
+@media (max-width: 769px) {
+  nav{
+    padding: 15px 20px;
+  }
+  nav img{
+    width: 100px;
+    cursor: pointer;
+  }
 }
+@media (max-width: 460px) {
+    nav{
+      padding: 0.5px;
+      flex-wrap: wrap;
+      font-size: 0.05px;
+    }
+    nav img{
+      position: relative;
+      width: 70px;
+      height: 20px;
+      cursor: pointer;
+      left: 190px;
+    }
+  }
