@@ -211,6 +211,10 @@ nav .navigation ul li a:hover{
      padding: 40px;
      box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
 }
+#registration .form h3{
+   position: relative;
+   left: 14px;
+}
 #registration .form input{
     margin: 15px;
     padding: 15px 10px;
@@ -227,7 +231,7 @@ nav .navigation ul li a:hover{
 #registration .form .btn{
 margin-top: 20px;
 align: center;
-margin-left: 40px;
+margin-left: 30px;
 }
 #registration a.Yellow{
     text-decoration: none;
@@ -396,10 +400,36 @@ footer .copyright .pro-links i:hover{
       font-size: 0.05px;
     }
     nav img{
+      margin-top: 5px;
+      margin-bottom: 5px;
       position: relative;
       width: 70px;
       height: 20px;
       cursor: pointer;
       left: 190px;
+    }
+    #Home h2 {
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+    #Home p{
+     font-size: 0.5rem;
+    }
+    #Features{
+        padding: 8vw 4vw 0 4vw;
+    }
+    #Course{
+         padding: 8vw 4vw 0 4vw;
+    }
+    #registration{
+        padding: 6vw 4vw 6vw 4vw;
+    }
+    #registration .remainder{
+        font-size: 75%;
+    }
+    #experts{
+        margin-top: 1rem;
+        padding: 8vw 8vw 4vw 8vw;
     }
   }
