@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel = "stylesheet" href = "static.css" >
+<link rel = "stylesheet" href = "https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<!--rel is the relationshiip b/w current document and linked document-->
+<title>static website</title>
+</head>
+<body>
+    <nav>
+        <img src = "Images/code.png" alt = "">
+        <div class = "navigation">
+            <ul>
+                <i id = "menu-close" class = "fas fa-times"></i>
+                <li><a href = "static.html">Home</a></li>
+                <li><a class = "active" href = "About.html">About</a></li>
+                <li><a href = "#">Blogs</a></li>
+                <li><a href = "#">Courses</a></li>
+                <li><a href = "#">Contact</a></li>
+                <img id = "menu" src = "Images/Menu.png" alt="">
+            </ul>
+        </div>
+        </nav>
+<section id = "HomeAbout">
+    <h2>About Us</h2>
+</section>
+<section id = "about-container">
+    <div class = "about-img">
+    <img src = "Images/About.png" alt = "" height="400px" width = "700px">
+    </div>
+    <div class = "about-text">
+    <h2>Welcome to Code Programming World</h2>
+    <p>You can enroll in our best tech courses for free. Take the course of your choice to enhance your coding skills.</p>
+    <div class = "about-feature">
+    <img src = "Images/1.png" alt = "" height = "100px" width = "150px">
+    <div class = "about-text1">
+    <h5>Free Courses</h5>
+    <p>You can start & finish one of our popular courses.</p>
+    </div>
+    </div>
+    <div class = "about-feature">
+    <img src = "Images/2.png" alt = "" height = "90px" width = "160px">
+    <div class = "about-text1">
+    <h5>Life Time Access</h5>
+    <p>You can start & finish one of our popular courses.</p>
+    </div>
+    </div>
+    </div>
+    </section>
+<!--Features-->
+<section id = "Features">
+    <h1>Best Features</h1>
+    <p>Clean code always looks like it was written by someone who cares.</p>
+    <div class = "feature-base">
+    <div class = "feature-box">
+    <i class="fas fa-graduation-cap"></i>
+    <h3>Scholarship Facility</h3>
+    <p>Education is the passport to the future, for tomorrow belongs to those who prepare for it today.</p>
+    </div>
+    <div class = "feature-box">
+    <i class="fas fa-file-certificate"></i>
+    <h3>Online Courses</h3>
+    <p>An investment in knowledge pays the best interest.</p>
+    </div>
+    <div class = "feature-box">
+    <i class="fas fa-award"></i>
+    <h3>Global Certification</h3>
+    <p>Education is one thing no one can take away from you.</p>
+    </div>
+    </div>
+</section>
+<footer>
+<div class = "footer-col">
+<h3>Top Courses</h3>
+<li>HTML</li>
+<li>CSS</li>
+<li>Bootstrap</li>
+<li>Ruby</li>
+<li>JavaScript</li>
+</div>
+<div class = "footer-col">
+<h3>Front-end Courses</h3>
+<li>HTML</li>
+<li>CSS</li>
+<li>Bootstrap</li>
+<li>JavaScript</li>
+</div>
+<div class = "footer-col">
+<h3>Back-end Coures</h3>
+<li>Ruby</li>
+<li>Ruby on Rails</li>
+<li>PHP</li>
+<li>Mysql</li>
+</div>
+<div class = "footer-col">
+<h3>Newsletter</h3>
+<p>You can trust us, we can send promo offers.</p>
+<div class = "sub">
+<input type = "text" placeholder = "Your Email Address"> 
+<a href = "#" class = "Yellow">SUBSCRIBE</a> 
+</div>
+</div>
+<div class="copyright">
+<p>Copyright ©2023 All rights reserved | This Template is made by Masuma Jaffery.</p>
+<div class = "pro-links">
+<i class = "fab fa-facebook-f"></i>
+<i class = "fab fa-instagram"></i>
+<i class = "fab fa-linkedin-in"></i>
+</div>
+</div>
+</footer>
+<script>
+    $('#menu').click(function(){
+        $('nav .navigation ul').addClass('active')
+    });
+    $('#menu-close').click(function(){
+        $('nav .navigation ul').removeClass('active')
+    });
+</script>
+</body>
+</html>
