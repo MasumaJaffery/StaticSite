@@ -410,10 +410,54 @@ footer .copyright .pro-links i:hover{
 #about-container{
     display: flex;
     align-items: center;
-    padding: 8vw 8vw 2vw 8vw;
+    padding: 5vw 5vw 2vw 5vw;
+}
+#about-container .about-img{
+    margin-right: 20px;
 }
 #about-container .about-text{
-    width: 60%;
+    width: 40%;
+    margin-bottom: 70px;
+}
+#about-container .about-text1{
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+#about-container .about-feature{
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 1vw;
+}
+#about-container .about-text .about-feature{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-position: cover;
+    background-position: center;
+}
+#trust h1{
+    text-align: center;
+    padding-top: 4vw;
+
+}
+#trust p{
+    text-align: center;
+    padding-bottom: 2vw;
+}
+#trust .trust-img{
+    display: flex;
+    padding: 2vw;
+    justify-content: space-between;
+}
+#trust .trust-img img{
+    width: 60px;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 @media (max-width: 769px) {
   nav{
