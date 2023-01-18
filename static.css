@@ -450,7 +450,8 @@ footer .copyright .pro-links i:hover{
 #trust .trust-img{
     display: flex;
     padding: 2vw;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 80px;   /* Use Gap to do make correct sizing between objects. */
 }
 #trust .trust-img img{
     width: 60px;
