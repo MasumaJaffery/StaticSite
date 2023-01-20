@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel = "stylesheet" href = "static.css" >
+<link rel = "stylesheet" href = "https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<!--rel is the relationshiip b/w current document and linked document-->
+<title>static website</title>
+</head>
+<body>
+    <nav>
+        <img src = "Images/code.png" alt = "">
+        <div class = "navigation">
+            <ul>
+                <i id = "menu-close" class = "fas fa-times"></i>
+                <li><a href = "static.html">Home</a></li>
+                <li><a href = "About.html">About</a></li>
+                <li><a class="active" href = "Blogs.html">Blogs</a></li>
+                <li><a href = "#">Courses</a></li>
+                <li><a href = "#">Contact</a></li>
+                <img id = "menu" src = "Images/Menu.png" alt="">
+            </ul>
+        </div>
+        </nav>
+<section id = "HomeBlog">
+    <h2>Blogs</h2>
+    </div>
+</section>
+<footer>
+<div class = "footer-col">
+<h3>Top Courses</h3>
+<li>HTML</li>
+<li>CSS</li>
+<li>Bootstrap</li>
+<li>Ruby</li>
+<li>JavaScript</li>
+</div>
+<div class = "footer-col">
+<h3>Front-end Courses</h3>
+<li>HTML</li>
+<li>CSS</li>
+<li>Bootstrap</li>
+<li>JavaScript</li>
+</div>
+<div class = "footer-col">
+<h3>Back-end Coures</h3>
+<li>Ruby</li>
+<li>Ruby on Rails</li>
+<li>PHP</li>
+<li>Mysql</li>
+</div>
+<div class = "footer-col">
+<h3>Newsletter</h3>
+<p>You can trust us, we can send promo offers.</p>
+<div class = "sub">
+<input type = "text" placeholder = "Your Email Address"> 
+<a href = "#" class = "Yellow">SUBSCRIBE</a> 
+</div>
+</div>
+<div class="copyright">
+<p>Copyright ©2023 All rights reserved | This Template is made by Masuma Jaffery.</p>
+<div class = "pro-links">
+<i class = "fab fa-facebook-f"></i>
+<i class = "fab fa-instagram"></i>
+<i class = "fab fa-linkedin-in"></i>
+</div>
+</div>
+</footer>
+<script>
+    $('#menu').click(function(){
+        $('nav .navigation ul').addClass('active')
+    });
+    $('#menu-close').click(function(){
+        $('nav .navigation ul').removeClass('active')
+    });
+</script>
+</body>
+</html>
