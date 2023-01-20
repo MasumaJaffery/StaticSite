@@ -476,6 +476,42 @@ footer .copyright .pro-links i:hover{
     color: #fff;
     font-size: 900;
 }
+#blog-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 8vw;
+}
+#blog-container .Blogs{
+    width: 60%;
+}
+#blog-container .Blogs img{
+    width: 100%;
+    border-radius: 20px;
+}
+#blog-container .Blogs .post h3{
+    color: black;
+    padding: 15px 0 10px 0;
+}
+#blog-container .Blogs .post p{
+    color: #757373;
+    padding-bottom: 20px;
+}
+#blog-container .Blogs .post a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: rgb(1, 1, 92);
+    color: #f9f9f9;
+    border-radius: 5px;
+    font-weight: 600;
+}
+#blog-container .category{
+    width: 30%;
+}
+#blog-container .category a{
+    text-decoration: none;
+}
 @media (max-width: 769px) {
   nav{
     padding: 15px 20px;
@@ -524,14 +560,13 @@ footer .copyright .pro-links i:hover{
         margin-top: 1rem;
         padding: 8vw 8vw 4vw 8vw;
     }
-    /* About Us Page */
+    /* About Us Page Media Queries*/
     #about-container{
-    
+        width: fit-content;
     }
     #about-container .about-img{
+        width: 100%;
         height: auto;
-        width: 5%;
-
     }
     #trust h1{
         font-size: medium;
