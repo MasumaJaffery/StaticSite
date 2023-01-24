@@ -187,10 +187,10 @@ nav .navigation ul li a:hover{
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    position: absolute;
-    right: 15px;
-    bottom: 100px;
-    font-size: 20px ;
+    position: relative;
+    bottom: 130px;
+    left: 280px;
+    font-size: 20px;
 }
 #registration{
     margin-top: 75px;
@@ -489,6 +489,9 @@ footer .copyright .pro-links i:hover{
     width: 100%;
     border-radius: 20px;
 }
+#blog-container .Blogs .post {
+    padding-bottom: 60px;
+}
 #blog-container .Blogs .post h3{
     color: black;
     padding: 15px 0 10px 0;
@@ -511,7 +514,49 @@ footer .copyright .pro-links i:hover{
 }
 #blog-container .category a{
     text-decoration: none;
+    color: #757373;
+    font-weight: 500;
+    line-height: 45px;
 }
+#blog-container .blogpost{
+    width: 60%;
+    margin: 0 auto;
+
+}
+/*Course Page CSS*/
+#HomeCourse{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,255,0.5)),url("Images/c33.jpg");
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    font-size: 900;
+}
+/*Inner Course Page CSS*/
+#course-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 8vw;
+}
+#course-inner .overveiw{
+    width: 70%;
+}
+#course-inner .overveiw img{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
 @media (max-width: 769px) {
   nav{
     padding: 15px 20px;
@@ -520,6 +565,13 @@ footer .copyright .pro-links i:hover{
     width: 100px;
     cursor: pointer;
   }
+  #blog-container .blogpost{
+    margin-top: 20px;
+    width: 100%;
+}
+#blog-container .blogpost .post img{
+    object-fit: cover;
+}
 }
 @media (max-width: 460px) {
     nav{
@@ -591,5 +643,26 @@ footer .copyright .pro-links i:hover{
         justify-content: space-between;
         align-items: center;
         
+    }
+    /*Blog Media Queries*/
+    #blog-container {
+        flex-direction: column;
+    }
+    #blog-container .Blogs {
+        width: 100%;
+
+    }
+    #blog-container .Blogs .post a{
+      align-content: center;
+    }
+    #blog-container .category{
+        width: 100%;
+    }
+    #blog-container .blogpost{
+        margin-top: 20px;
+    
+    }
+    #blog-container .blogpost .post img{
+        object-fit: cover;
     }
   }
