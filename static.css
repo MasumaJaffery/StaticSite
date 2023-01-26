@@ -27,11 +27,14 @@ nav img{
     cursor: pointer;
 }
 #menu{
- display: none;
-}
-#menu-close{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
     display: none;
-}
+   }
+   #menu-close{
+       display: none;
+   }
 nav .navigation ul{
     display: flex;
     justify-content: flex-end;
@@ -157,6 +160,7 @@ nav .navigation ul li a:hover{
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 1rem;
     margin-top: 50px;
+    margin-bottom: 20px;
 }
 #Course .Courses{
     text-align: start;
@@ -653,6 +657,36 @@ footer .copyright .pro-links i:hover{
     width: 100px;
     cursor: pointer;
   }
+  #menu{
+    display: initial;
+   }
+   #menu-close{
+       display: initial;
+       color: #fff;
+       padding: 30px 0 20px 20px;
+   }
+   nav .navigation ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 220px;
+    background-color: rgb(17,20,104,0.45);
+    backdrop-filter: blur(4.5px);
+    border: 1px solid rgb(255,255,255,0.18);
+    height: 100vh;
+    transition: 0.3s;
+   }
+   nav .navigation ul li{
+    padding: 20px 0 20px 40px;
+    margin-left: 0;
+   }
+   nav .navigation ul li a{
+    color: #fff;
+   }
   #blog-container .blogpost{
     margin-top: 20px;
     width: 100%;
