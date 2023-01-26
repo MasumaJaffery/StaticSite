@@ -19,8 +19,7 @@ nav{
     align-items: center;
     padding: 1vw 8vw;
     box-shadow: 2px 2px 4px black;
-    z-index: 999;
-    overflow: hidden;
+    z-index: 2;
 }
 nav img{
     width: 150px;
@@ -241,7 +240,7 @@ nav .navigation ul li a:hover{
 }
 #registration .form .btn{
 margin-top: 20px;
-align: center;
+text-align: center;
 margin-left: 30px;
 }
 #registration a.Yellow{
