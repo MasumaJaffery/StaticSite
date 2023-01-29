@@ -10,17 +10,20 @@
 <title>static website</title>
 </head>
 <body>
-    <nav>
+    <button type="button" class="burger" onclick="toggleMenu()" >
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </button>
+      <nav id="navigation" class="invisible">
         <img src = "Images/code.png" alt = "">
-        <div class = "navigation">
+        <div class = "navigate">
             <ul>
-                <i id = "menu-close" class = "fas fa-times"></i>
                 <li><a class="active" href = "static.html">Home</a></li>
                 <li><a href = "About.html">About</a></li>
                 <li><a href = "Blogs.html">Blogs</a></li>
                 <li><a href = "Course.html">Courses</a></li>
-                <li><a href = "#">Contact</a></li>
-                <img id = "menu" src = "Images/Menu.png" alt="">
+                <li><a href = "Contact.html">Contact</a></li>
             </ul>
         </div>
         </nav>
@@ -201,12 +204,13 @@
 </div>
 </footer>
 <script>
-    $('#menu').click(function(){
-        $('nav .navigation ul').addClass('active')
-    });
-    $('#menu-close').click(function(){
-        $('nav .navigation ul').removeClass('active')
-    });
+    function toggleMenu() {
+  // First, we are going to get the element with the ID of navigation from the HTML document like this.
+  let menu = document.getElementById('navigation');
+
+  // Now let's make it toggle the class 'invisible' like this.
+  menu.classList.toggle('invisible');
+}
 </script>
 </body>
 </html>

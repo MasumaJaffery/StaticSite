@@ -9,6 +9,9 @@ body{
     font-family: Poppins;
 }
 /* padding is            */
+.burger{
+    display: none;
+}
 nav{
     position: fixed;
     width: 100%;
@@ -25,35 +28,26 @@ nav img{
     width: 150px;
     cursor: pointer;
 }
-#menu{
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    display: none;
-   }
-   #menu-close{
-       display: none;
-   }
-nav .navigation ul{
+nav .navigate ul{
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin: 0%;
     padding:0%;
 }
-nav .navigation ul li{
+nav .navigate ul li{
     list-style: none;
     margin-left: 30px;
 }
-nav .navigation ul li a{
+nav .navigate ul li a{
     text-decoration: none;
     color: black;
     font-size: 16px;
     font-weight: 500;
     transition: 0.3s ease;
 }
-nav .navigation ul li a.active,
-nav .navigation ul li a:hover{
+nav .navigate ul li a.active,
+nav .navigate ul li a:hover{
  color: blue;
 }
 /* background-image: linear-gradient(direction, color-stop1, color-stop2, ...);  default top to down */
@@ -656,15 +650,34 @@ footer .copyright .pro-links i:hover{
     width: 100px;
     cursor: pointer;
   }
-  #menu{
-    display: initial;
-   }
-   #menu-close{
-       display: initial;
-       color: #fff;
-       padding: 30px 0 20px 20px;
-   }
-   nav .navigation ul{
+  .burger {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    border: none;
+    z-index: 3;
+  }
+  .burger .bar {
+    background-color: blue;
+    width: 30px;
+    height: 5px;
+  }
+  
+  .burger:hover .bar {
+    background-color: #fff;
+  }
+  
+  .invisible {
+    display: none;
+  }
+   nav .navigate ul{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -679,12 +692,14 @@ footer .copyright .pro-links i:hover{
     height: 100vh;
     transition: 0.3s;
    }
-   nav .navigation ul li{
+   nav .navigate ul li{
     padding: 20px 0 20px 40px;
     margin-left: 0;
+    list-style: none;
    }
-   nav .navigation ul li a{
+   nav .navigate ul li a{
     color: #fff;
+    text-decoration: none;
    }
   #blog-container .blogpost{
     margin-top: 20px;
