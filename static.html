@@ -10,14 +10,16 @@
 <title>static website</title>
 </head>
 <body>
-    <button type="button" class="burger" onclick="toggleMenu()" >
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </button>
-      <nav id="navigation" class="invisible">
+      <nav class = "navigate">
+      <!-- Let's also pass the function to the button -->
+      <!-- That way, everytime we click we'll toggle the menu -->
+        <button type="button" class="burger" onclick="toggleMenu()" >
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </button>
         <img src = "Images/code.png" alt = "">
-        <div class = "navigate">
+        <div id="navigation" class="invisible" >
             <ul>
                 <li><a class="active" href = "static.html">Home</a></li>
                 <li><a href = "About.html">About</a></li>
@@ -204,6 +206,7 @@
 </div>
 </footer>
 <script>
+  // So now, what we want is a function that toggles the menu. so let's start by giving an id to the menu itself.
     function toggleMenu() {
   // First, we are going to get the element with the ID of navigation from the HTML document like this.
   let menu = document.getElementById('navigation');

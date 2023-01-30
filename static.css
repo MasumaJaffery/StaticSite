@@ -28,26 +28,26 @@ nav img{
     width: 150px;
     cursor: pointer;
 }
-nav .navigate ul{
+nav #navigation ul{
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin: 0%;
     padding:0%;
 }
-nav .navigate ul li{
+nav #navigation ul li{
     list-style: none;
     margin-left: 30px;
 }
-nav .navigate ul li a{
+nav #navigation ul li a{
     text-decoration: none;
     color: black;
     font-size: 16px;
     font-weight: 500;
     transition: 0.3s ease;
 }
-nav .navigate ul li a.active,
-nav .navigate ul li a:hover{
+nav #navigation ul li a.active,
+nav #navigation ul li a:hover{
  color: blue;
 }
 /* background-image: linear-gradient(direction, color-stop1, color-stop2, ...);  default top to down */
@@ -650,6 +650,7 @@ footer .copyright .pro-links i:hover{
     width: 100px;
     cursor: pointer;
   }
+  /* Burger Toggle Menu */
   .burger {
     position: fixed;
     top: 15px;
@@ -665,7 +666,7 @@ footer .copyright .pro-links i:hover{
     z-index: 3;
   }
   .burger .bar {
-    background-color: blue;
+    background-color: rgb(1, 1, 92);
     width: 30px;
     height: 5px;
   }
@@ -677,7 +678,8 @@ footer .copyright .pro-links i:hover{
   .invisible {
     display: none;
   }
-   nav .navigate ul{
+  /* Tada!!! */
+   nav #navigation ul{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -692,12 +694,12 @@ footer .copyright .pro-links i:hover{
     height: 100vh;
     transition: 0.3s;
    }
-   nav .navigate ul li{
+   nav #navigation ul li{
     padding: 20px 0 20px 40px;
     margin-left: 0;
     list-style: none;
    }
-   nav .navigate ul li a{
+   nav #navigation ul li a{
     color: #fff;
     text-decoration: none;
    }
@@ -711,19 +713,63 @@ footer .copyright .pro-links i:hover{
 }
 @media (max-width: 460px) {
     nav{
-      padding: 0.5px;
-      flex-wrap: wrap;
-      font-size: 0.05px;
-    }
-    nav img{
-      margin-top: 5px;
-      margin-bottom: 5px;
-      position: relative;
-      width: 70px;
-      height: 20px;
-      cursor: pointer;
-      left: 190px;
-    }
+        padding: 15px 20px;
+      }
+      nav img{
+        width: 100px;
+        cursor: pointer;
+      }
+      .burger {
+        position: fixed;
+        top: 15px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: transparent;
+        width: 30px;
+        height: 30px;
+        border: none;
+        z-index: 3;
+      }
+      .burger .bar {
+        background-color: rgb(1, 1, 92);
+        width: 30px;
+        height: 5px;
+      }
+      
+      .burger:hover .bar {
+        background-color: #fff;
+      }
+      
+      .invisible {
+        display: none;
+      }
+       nav #navigation ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 220px;
+        background-color: rgb(17,20,104,0.45);
+        backdrop-filter: blur(4.5px);
+        border: 1px solid rgb(255,255,255,0.18);
+        height: 100vh;
+        transition: 0.3s;
+       }
+       nav #navigation ul li{
+        padding: 20px 0 20px 40px;
+        margin-left: 0;
+        list-style: none;
+       }
+       nav #navigation ul li a{
+        color: #fff;
+        text-decoration: none;
+       }
     #Home h2 {
     color: white;
     font-size: 1rem;
