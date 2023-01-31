@@ -472,6 +472,8 @@ footer .copyright .pro-links i:hover{
     flex-direction: column;
     color: #fff;
     font-size: 900;
+    margin-bottom: -50px;
+
 }
 #blog-container{
     display: flex;
@@ -535,6 +537,7 @@ footer .copyright .pro-links i:hover{
     flex-direction: column;
     color: #fff;
     font-size: 900;
+    margin-bottom: -50px;
 }
 /*Inner Course Page CSS*/
 #course-inner{
@@ -642,6 +645,67 @@ footer .copyright .pro-links i:hover{
     font-size: 0.8rem;
     padding: 13px 45px;
 }
+/* Contact Page CSS */
+#HomeContact{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,255,0.5)),url("Images/c.jpg");
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+#Contact{
+    padding: 8vw;
+}
+#Contact .info{
+    width: 350px;
+}
+#Contact .info h2{
+    color: #2c234d;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 0.8;
+    margin-bottom: 1rem;
+}
+#Contact .info p{
+    color: #686875;
+    border-bottom: 1px solid #e5e4ed; 
+    line-height: 24px;
+    margin-bottom: 2rem;
+    padding-bottom: 25px;
+}
+#Contact .info h3{
+    color: #2c234d;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 26px;
+    margin-bottom: 1rem;
+}
+#Contact .info .info-details div{
+    display: flex;
+}
+#Contact .info .info-details div .get{
+    font-size: 1rem;
+    line-height: 22px;
+    color: darkblue;
+    margin-right: 20px;
+}
+#Contact .info .info-details div p{
+    font-size: 14px;
+    border-bottom: none;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+#Contact .info .info-details .pro-links i{
+    margin-right: 8px;
+}
+
 @media (max-width: 769px) {
   nav{
     padding: 15px 20px;

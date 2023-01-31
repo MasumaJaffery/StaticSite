@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel = "stylesheet" href = "static.css" >
+<link rel = "stylesheet" href = "https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<!--rel is the relationshiip b/w current document and linked document-->
+<title>static website</title>
+</head>
+<body>
+      <nav class = "navigate">
+      <!-- Let's also pass the function to the button -->
+      <!-- That way, everytime we click we'll toggle the menu -->
+        <button type="button" class="burger" onclick="toggleMenu()" >
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </button>
+        <img src = "Images/code.png" alt = "">
+        <div id="navigation" class="invisible" >
+            <ul>
+                <li><a class="active" href = "static.html">Home</a></li>
+                <li><a href = "About.html">About</a></li>
+                <li><a href = "Blogs.html">Blogs</a></li>
+                <li><a href = "Course.html">Courses</a></li>
+                <li><a href = "Contact.html">Contact</a></li>
+            </ul>
+        </div>
+        </nav>
+<section id = "HomeContact">
+    <h2>Contact</h2>
+</section>
+<section id = "Contact">
+<div class = "info">
+<h2>How can we Help?</h2>
+<p>Looking for Help? Fill the Form, we respond you to solve your problems.</p>
+<div class = "info-details">
+<h3>Phone</h3>
+<div>
+<i class = "fas fa-phone-alt get"></i>
+<p>+*********<br>+*********</p>
+</div>
+<h3>Support</h3>
+<div>
+<i class = "fal fa-envelope-open-text get"></i>
+<p>masumajaffery1@gmail.com</p>
+</div>
+<h3>Follow Us</h3>
+<div class = "pro-links">
+    <i class = "fab fa-facebook-f"></i>
+    <i class = "fab fa-instagram"></i>
+    <i class = "fab fa-linkedin-in"></i>
+    <i class = "fab fa-github"></i>
+    </div>
+</div>
+</div>
+<div class = "form"></div>
+</section>
+<footer>
+<div class = "footer-col">
+<h3>Top Courses</h3>
+<li>HTML</li>
+<li>CSS</li>
+<li>Bootstrap</li>
+<li>Ruby</li>
+<li>JavaScript</li>
+</div>
+<div class = "footer-col">
+<h3>Front-end Courses</h3>
+<li>HTML</li>
+<li>CSS</li>
+<li>Bootstrap</li>
+<li>JavaScript</li>
+</div>
+<div class = "footer-col">
+<h3>Back-end Coures</h3>
+<li>Ruby</li>
+<li>Ruby on Rails</li>
+<li>PHP</li>
+<li>Mysql</li>
+</div>
+<div class = "footer-col">
+<h3>Newsletter</h3>
+<p>You can trust us, we can send promo offers.</p>
+<div class = "sub">
+<input type = "text" placeholder = "Your Email Address"> 
+<a href = "#" class = "Yellow">SUBSCRIBE</a> 
+</div>
+</div>
+<div class="copyright">
+<p>Copyright ©2023 All rights reserved | This Template is made by Masuma Jaffery.</p>
+<div class = "pro-links">
+<i class = "fab fa-facebook-f"></i>
+<i class = "fab fa-instagram"></i>
+<i class = "fab fa-linkedin-in"></i>
+</div>
+</div>
+</footer>
+<script>
+  // So now, what we want is a function that toggles the menu. so let's start by giving an id to the menu itself.
+    function toggleMenu() {
+  // First, we are going to get the element with the ID of navigation from the HTML document like this.
+  let menu = document.getElementById('navigation');
+
+  // Now let's make it toggle the class 'invisible' like this.
+  menu.classList.toggle('invisible');
+}
+</script>
+</body>
+</html>
