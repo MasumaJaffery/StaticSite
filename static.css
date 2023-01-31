@@ -703,6 +703,29 @@ footer .copyright .pro-links i:hover{
     color: #fff;
     text-decoration: none;
    }
+   #about-container{
+    margin-bottom: -100px;
+}
+   #about-container .about-img img{
+    width: 100%;
+    height: auto;
+   }
+   #about-container .about-text h2{
+    font-size: 1rem;
+   }
+   #about-container .about-text p{
+    font-size: 10px;
+   }
+   #about-container .about-feature img{
+    width: 100px;
+    height: 70px;
+   }
+   #about-container .about-feature h5{
+    font-size: 12px;
+   }
+   #about-container .about-feature p{
+    font-size: 10px;
+   }
   #blog-container .blogpost{
     margin-top: 20px;
     width: 100%;
@@ -796,12 +819,25 @@ footer .copyright .pro-links i:hover{
     }
     /* About Us Page Media Queries*/
     #about-container{
-        width: fit-content;
+        margin-bottom: -100px;
     }
-    #about-container .about-img{
+    #about-container .about-img img{
         width: 100%;
         height: auto;
-    }
+       }
+       #about-container .about-text h2{
+        font-size: 13px;
+       }
+       #about-container .about-text p{
+        font-size: 8px;
+       }
+       #about-container .about-feature img{
+        width: 80px;
+        height: 50px;
+       }
+       #about-container .about-feature h5{
+        font-size: 10px;
+       }
     #trust h1{
         font-size: medium;
         text-align: center;

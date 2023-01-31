@@ -10,20 +10,25 @@
 <title>static website</title>
 </head>
 <body>
-    <nav>
-        <img src = "Images/code.png" alt = "">
-        <div class = "navigation">
-            <ul>
-                <i id = "menu-close" class = "fas fa-times"></i>
-                <li><a href = "static.html">Home</a></li>
-                <li><a href = "About.html">About</a></li>
-                <li><a href = "Blogs.html">Blogs</a></li>
-                <li><a class="active" href = "Course.html">Courses</a></li>
-                <li><a href = "#">Contact</a></li>
-                <img id = "menu" src = "Images/Menu.png" alt="">
-            </ul>
-        </div>
-        </nav>
+    <nav class = "navigate">
+        <!-- Let's also pass the function to the button -->
+        <!-- That way, everytime we click we'll toggle the menu -->
+          <button type="button" class="burger" onclick="toggleMenu()" >
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </button>
+          <img src = "Images/code.png" alt = "">
+          <div id="navigation" class="invisible" >
+              <ul>
+                  <li><a class="active" href = "static.html">Home</a></li>
+                  <li><a href = "About.html">About</a></li>
+                  <li><a href = "Blogs.html">Blogs</a></li>
+                  <li><a href = "Course.html">Courses</a></li>
+                  <li><a href = "Contact.html">Contact</a></li>
+              </ul>
+          </div>
+          </nav>
 <!--Courses-->
 <section id = "course-inner">
 <div class = "overveiw">
@@ -124,12 +129,14 @@
 </div>
 </footer>
 <script>
-    $('#menu').click(function(){
-        $('nav .navigation ul').addClass('active')
-    });
-    $('#menu-close').click(function(){
-        $('nav .navigation ul').removeClass('active')
-    });
+   // So now, what we want is a function that toggles the menu. so let's start by giving an id to the menu itself.
+   function toggleMenu() {
+  // First, we are going to get the element with the ID of navigation from the HTML document like this.
+  let menu = document.getElementById('navigation');
+
+  // Now let's make it toggle the class 'invisible' like this.
+  menu.classList.toggle('invisible');
+}
 </script>
 </body>
 </html>
