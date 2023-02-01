@@ -662,6 +662,9 @@ footer .copyright .pro-links i:hover{
 }
 #Contact{
     padding: 8vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 #Contact .info{
     width: 350px;
@@ -705,7 +708,65 @@ footer .copyright .pro-links i:hover{
 #Contact .info .info-details .pro-links i{
     margin-right: 8px;
 }
-
+#Contact .form{
+    width: 60%;
+    background-color: #f7f6fa;
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: -15px;
+}
+#Contact .form h4{
+    font-size: 24px;
+    color: #29303B;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+#Contact .form p{
+    color:#686875;
+    line-height: 24px;
+    padding-bottom: 25px;
+}
+#Contact .form .form-details{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#Contact .form .form-details input{
+    width: 49%;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    border: none;
+    background: #fff;
+    color: #7b838a;
+    outline: none;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+}
+#Contact .form .form-details-2 input,
+#Contact .form .form-details-2 textarea{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    border: none;
+    background: #fff;
+    color: #7b838a;
+    outline: none;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+}
+#Contact .form button{
+    font-size: 0.9rem;
+    padding: 13px 25px;
+    background-color: darkblue;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+}
 @media (max-width: 769px) {
   nav{
     padding: 15px 20px;
